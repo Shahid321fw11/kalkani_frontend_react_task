@@ -1,8 +1,14 @@
 import './App.css';
+import Navbar from './Components/Navbar';
+import { Routes, Route } from 'react-router-dom';
 
 function App() {
   return <>
-    <h1>Hello World</h1>
+    <Navbar />
+    <Routes>
+      <Route path="/screen1" element={<h1>Home</h1>} />
+      <Route path="/screen2" element={<h1>About</h1>} />
+    </Routes>
   </>
 }
 
