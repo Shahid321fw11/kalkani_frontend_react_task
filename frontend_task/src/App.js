@@ -8,6 +8,7 @@ function App() {
   return <>
     <Navbar />
     <Routes>
+      <Route path="/" element={<Screen1 />} />
       <Route path="/screen1" element={<Screen1 />} />
       <Route path="/screen2" element={<Screen2 />} />
     </Routes>
